@@ -22,7 +22,7 @@ public class EmployeeController {
 
   List<Employee> employeeDb = new ArrayList<>();//[{},{},{}]
 
-  @PostMapping( value = {"/employee", "/employeeOne"} )
+  @PostMapping( value = {"/employee"} )
   public String employeeCheck(@ModelAttribute Employee employee) {
 //    employee.setId(1);
 //    employee.setName("Lalith");

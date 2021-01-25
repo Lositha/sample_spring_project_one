@@ -13,49 +13,38 @@
 <body >
 
 <div class="container" >
-  <div class="container-fluid text-center text-info" >
-    <h3 >Employee</h3 >
+  <div class="container-fluid text-center" >
+    <div class="row" >
+      <div class="col-4" >
+
+      </div >
+      <div class="col-4" >
+        <h3 >Employee One List</h3 >
+      </div >
+      <div class="col-4" >
+        <a href="/employeeOne" >
+          <button type="button" class="btn btn-info" > All Employee One</button >
+        </a >
+      </div >
+    </div >
   </div >
+  <!--employee add form-->
   <div class="container-fluid mt-1" >
-    <form action="/employeeOne" method="post" >
+    <form action="/employeeOne" method="post" data-th-object="${employeeOne}">
       <div class="form-group" >
-        <label for="id" >Id</label >
-        <input type="text"
-               class="form-control" name="id" id="id" placeholder="Enter Id" >
+        <label data-th-for="${'id'}" >Id</label >
+        <input type="text" data-th-field="*{id}"  class="form-control" placeholder="Enter Id" readonly >
       </div >
       <div class="form-group" >
-        <label for="name" >Name</label >
-        <input type="text"
-               class="form-control" name="name" id="name" placeholder="Enter Name" >
+        <label data-th-for="${'name'}" >Name</label >
+        <input type="text" data-th-field="*{name}"  class="form-control" placeholder="Enter Name" required >
       </div >
       <div class="form-group" >
-        <label for="mobile" >Mobile</label >
-        <input type="text"
-               class="form-control" name="mobile" id="mobile" placeholder="Enter Mobile" >
+        <label data-th-for="${'mobile'}" >Mobile</label >
+        <input type="text" data-th-field="*{mobile}"  class="form-control" minlength="9" maxlength="10" placeholder="Enter Mobile" required >
       </div >
       <button type="submit" class="btn btn-primary" >Submit</button >
     </form >
-  </div >
-  <div class="container-fluid mt-1" >
-    <table class="table table-striped table-inverse table-responsive" >
-      <thead class="thead-inverse" >
-      <tr >
-        <th >Index</th >
-        <th >Id</th >
-        <th >Name</th >
-        <th >Mobile</th >
-      </tr >
-      </thead >
-      <tbody >
-      <tr data-th-each="employeeOne, a : ${employeeDb}" >
-        <td data-th-text="${a.count}" ></td >
-        <td data-th-text="${employeeOne.id}" ></td >
-        <td  data-th-text="${employeeOne.name == null ? 'Ha ha': employeeOne.name}" ></td >
-        <!--data-th-if="${employeeOne.name!=null}"-->
-        <td data-th-text="${employeeOne.mobile}" ></td >
-      </tr >
-      </tbody >
-    </table >
   </div >
 </div >
 
