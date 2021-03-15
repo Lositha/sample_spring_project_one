@@ -10,10 +10,6 @@ import java.util.List;
 @Service
 public class EmployeeOneService {
 
-/*
-  @Autowired
-  private EmployeeOneDao employeeOneDao;
-*/
 
   private final EmployeeOneDao employeeOneDao;
 
@@ -34,6 +30,7 @@ public class EmployeeOneService {
 
   // 3. save update (persist) -> create update
   public EmployeeOne persist(EmployeeOne employeeOne) {
+
     return employeeOneDao.save(employeeOne);
   }
 
