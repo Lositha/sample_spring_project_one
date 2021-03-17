@@ -17,7 +17,7 @@
     <h3 >Employee</h3 >
   </div >
   <div class="container-fluid mt-1" >
-    <form action="/employeeOne" method="post" >
+    <form action="/employee" method="post" >
       <div class="form-group" >
         <label for="id" >Id</label >
         <input type="text"
@@ -47,12 +47,12 @@
       </tr >
       </thead >
       <tbody >
-      <tr data-th-each="employeeOne, a : ${employeeDb}" >
+      <tr data-th-each="employeeT, a : ${employeeDb}" >
         <td data-th-text="${a.count}" ></td >
-        <td data-th-text="${employeeOne.id}" ></td >
-        <td  data-th-text="${employeeOne.name == null ? 'Ha ha': employeeOne.name}" ></td >
-        <!--data-th-if="${employeeOne.name!=null}"-->
-        <td data-th-text="${employeeOne.mobile}" ></td >
+        <td data-th-text="${employeeT.id}" ></td >
+        <td  data-th-text="${employeeT.name == null ? 'Ha ha': employeeT.name}" ></td >
+        <!--data-th-if="${employeeT.name!=null}"-->
+        <td data-th-text="${employeeT.mobile}" ></td >
       </tr >
       </tbody >
     </table >

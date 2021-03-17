@@ -18,6 +18,8 @@ public class EmployeeOneService {
   }
 
   //CRUD -> Create Read Update Delete
+
+
 // 1. find all -> read
   public List< EmployeeOne > findAll() {
     return employeeOneDao.findAll();
@@ -30,7 +32,6 @@ public class EmployeeOneService {
 
   // 3. save update (persist) -> create update
   public EmployeeOne persist(EmployeeOne employeeOne) {
-
     return employeeOneDao.save(employeeOne);
   }
 
