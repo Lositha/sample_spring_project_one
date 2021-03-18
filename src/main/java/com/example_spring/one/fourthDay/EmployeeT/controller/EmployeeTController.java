@@ -27,14 +27,13 @@ public class EmployeeTController {
 
   @GetMapping( "/add" )
   private String addForm(Model model) {
-     model.addAttribute("employeeOne",new EmployeeT());
+     model.addAttribute("employeeT",new EmployeeT());
     return "fourthDay/employeeT/addEmployeeT";
   }
 
 
   @PostMapping
   public String persist(@ModelAttribute EmployeeT employeeT) {
-
     employeeTService.persist(employeeT);
     return "redirect:/employeeT";
   }
