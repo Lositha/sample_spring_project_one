@@ -1,12 +1,12 @@
 package com.example_spring.ongoing.fifthDay.task5.dao;
 
 
-import com.example_spring.ongoing.fifthDay.task5.entity.Task;
+import com.example_spring.ongoing.fifthDay.task5.entity.Task5;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TaskDao extends JpaRepository< Task, Integer> {
+public interface Task5Dao extends JpaRepository< Task5, Integer> {
 
 
 }

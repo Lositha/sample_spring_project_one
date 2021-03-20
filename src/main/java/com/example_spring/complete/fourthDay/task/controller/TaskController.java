@@ -2,8 +2,8 @@ package com.example_spring.complete.fourthDay.task.controller;
 
 
 
+import com.example_spring.common_thing.enums.Behavior;
 import com.example_spring.complete.fourthDay.task.entity.Task;
-import com.example_spring.complete.fourthDay.task.entity.enums.Behavior;
 import com.example_spring.complete.fourthDay.task.service.TaskService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

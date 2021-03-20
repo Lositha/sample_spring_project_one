@@ -1,4 +1,4 @@
-package com.example_spring.ongoing.fifthDay.task5.entity.enums;
+package com.example_spring.common_thing.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

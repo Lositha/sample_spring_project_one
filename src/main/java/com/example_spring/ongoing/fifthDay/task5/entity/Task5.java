@@ -1,9 +1,12 @@
 package com.example_spring.ongoing.fifthDay.task5.entity;
 
-import com.example_spring.ongoing.fifthDay.task5.entity.enums.Behavior;
+
+import com.example_spring.common_thing.enums.Behavior;
+import com.example_spring.ongoing.fifthDay.employeeT5.entity.EmployeeT5;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -12,7 +15,7 @@ import javax.persistence.*;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class Task {
+public class Task5 {
 
   @Id
   @GeneratedValue( strategy = GenerationType.IDENTITY )
@@ -22,5 +25,8 @@ public class Task {
 
   @Enumerated(EnumType.STRING)
   private Behavior behavior;
+
+  @OneToMany(mappedBy = "task5")
+  private List< EmployeeT5 > employeeT5s;
 
 }

@@ -1,6 +1,7 @@
 package com.example_spring.complete.fourthDay.task.entity;
 
-import com.example_spring.complete.fourthDay.task.entity.enums.Behavior;
+
+import com.example_spring.common_thing.enums.Behavior;
 import lombok.*;
 
 import javax.persistence.*;

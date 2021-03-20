@@ -1,11 +1,9 @@
 package com.example_spring.ongoing.fifthDay.employeeT5.entity;
 
+import com.example_spring.ongoing.fifthDay.task5.entity.Task5;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Entity
@@ -23,5 +21,9 @@ public class EmployeeT5 {
   private String name;
 
   private String mobile;
+
+  @ManyToOne
+  private Task5 task5;
+
 
 }
