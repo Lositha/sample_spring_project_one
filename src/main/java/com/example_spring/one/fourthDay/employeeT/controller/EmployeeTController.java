@@ -1,7 +1,7 @@
-package com.example_spring.one.fourthDay.EmployeeT.controller;
+package com.example_spring.one.fourthDay.employeeT.controller;
 
-import com.example_spring.one.fourthDay.EmployeeT.entity.EmployeeT;
-import com.example_spring.one.fourthDay.EmployeeT.service.EmployeeTService;
+import com.example_spring.one.fourthDay.employeeT.entity.EmployeeT;
+import com.example_spring.one.fourthDay.employeeT.service.EmployeeTService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.example_spring.one.fourthDay.EmployeeT.entity;
+package com.example_spring.one.fourthDay.employeeT.entity;
 
 import lombok.*;
 

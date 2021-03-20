@@ -1,6 +1,6 @@
-package com.example_spring.one.fourthDay.EmployeeT.dao;
+package com.example_spring.one.fourthDay.employeeT.dao;
 
-import com.example_spring.one.fourthDay.EmployeeT.entity.EmployeeT;
+import com.example_spring.one.fourthDay.employeeT.entity.EmployeeT;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
