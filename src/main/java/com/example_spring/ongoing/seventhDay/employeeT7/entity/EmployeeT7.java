@@ -1,9 +1,10 @@
-package com.example_spring.ongoing.sixthDay.employeeT6.entity;
+package com.example_spring.ongoing.seventhDay.employeeT7.entity;
 
-import com.example_spring.ongoing.sixthDay.task6.entity.Task6;
+import com.example_spring.ongoing.seventhDay.task7.entity.Task7;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeT6 {
+public class EmployeeT7 {
 
   @Id
   @GeneratedValue( strategy = GenerationType.IDENTITY )
@@ -22,8 +23,7 @@ public class EmployeeT6 {
 
   private String mobile;
 
-  @ManyToOne
-  private Task6 task6;
-
+  @OneToMany
+  private List< Task7 > task7s;
 
 }

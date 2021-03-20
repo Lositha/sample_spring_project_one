@@ -1,8 +1,8 @@
-package com.example_spring.ongoing.sixthDay.employeeT6.controller;
+package com.example_spring.complete.sixthDay.employeeT6.controller;
 
-import com.example_spring.ongoing.sixthDay.employeeT6.entity.EmployeeT6;
-import com.example_spring.ongoing.sixthDay.employeeT6.service.EmployeeT6Service;
-import com.example_spring.ongoing.sixthDay.task6.service.Task6Service;
+import com.example_spring.complete.sixthDay.employeeT6.entity.EmployeeT6;
+import com.example_spring.complete.sixthDay.employeeT6.service.EmployeeT6Service;
+import com.example_spring.complete.sixthDay.task6.service.Task6Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

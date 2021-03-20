@@ -1,12 +1,10 @@
-package com.example_spring.ongoing.sixthDay.task6.entity;
+package com.example_spring.complete.sixthDay.task6.entity;
 
 
 import com.example_spring.common_thing.enums.Behavior;
-import com.example_spring.ongoing.sixthDay.employeeT6.entity.EmployeeT6;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 
 
 @Entity
@@ -26,7 +24,5 @@ public class Task6 {
   @Enumerated(EnumType.STRING)
   private Behavior behavior;
 
-  @OneToMany(mappedBy = "task5")
-  private List< EmployeeT6 > employeeT6s;
 
 }

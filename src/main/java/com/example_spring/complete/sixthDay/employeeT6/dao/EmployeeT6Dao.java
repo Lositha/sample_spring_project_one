@@ -1,6 +1,6 @@
-package com.example_spring.ongoing.sixthDay.employeeT6.dao;
+package com.example_spring.complete.sixthDay.employeeT6.dao;
 
-import com.example_spring.ongoing.sixthDay.employeeT6.entity.EmployeeT6;
+import com.example_spring.complete.sixthDay.employeeT6.entity.EmployeeT6;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
