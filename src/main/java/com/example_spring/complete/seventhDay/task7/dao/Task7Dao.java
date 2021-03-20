@@ -1,7 +1,7 @@
-package com.example_spring.ongoing.seventhDay.task7.dao;
+package com.example_spring.complete.seventhDay.task7.dao;
 
 
-import com.example_spring.ongoing.seventhDay.task7.entity.Task7;
+import com.example_spring.complete.seventhDay.task7.entity.Task7;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

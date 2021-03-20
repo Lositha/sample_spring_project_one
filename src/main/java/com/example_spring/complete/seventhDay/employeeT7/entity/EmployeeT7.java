@@ -1,6 +1,6 @@
-package com.example_spring.ongoing.seventhDay.employeeT7.entity;
+package com.example_spring.complete.seventhDay.employeeT7.entity;
 
-import com.example_spring.ongoing.seventhDay.task7.entity.Task7;
+import com.example_spring.complete.seventhDay.task7.entity.Task7;
 import lombok.*;
 
 import javax.persistence.*;

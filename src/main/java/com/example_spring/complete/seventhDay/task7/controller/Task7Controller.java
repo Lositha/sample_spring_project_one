@@ -1,10 +1,10 @@
-package com.example_spring.ongoing.seventhDay.task7.controller;
+package com.example_spring.complete.seventhDay.task7.controller;
 
 
 
 import com.example_spring.common_thing.enums.Behavior;
-import com.example_spring.ongoing.seventhDay.task7.entity.Task7;
-import com.example_spring.ongoing.seventhDay.task7.service.Task7Service;
+import com.example_spring.complete.seventhDay.task7.entity.Task7;
+import com.example_spring.complete.seventhDay.task7.service.Task7Service;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

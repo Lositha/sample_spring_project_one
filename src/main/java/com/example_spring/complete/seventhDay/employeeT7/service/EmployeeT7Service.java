@@ -1,7 +1,7 @@
-package com.example_spring.ongoing.seventhDay.employeeT7.service;
+package com.example_spring.complete.seventhDay.employeeT7.service;
 
-import com.example_spring.ongoing.seventhDay.employeeT7.dao.EmployeeT7Dao;
-import com.example_spring.ongoing.seventhDay.employeeT7.entity.EmployeeT7;
+import com.example_spring.complete.seventhDay.employeeT7.dao.EmployeeT7Dao;
+import com.example_spring.complete.seventhDay.employeeT7.entity.EmployeeT7;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

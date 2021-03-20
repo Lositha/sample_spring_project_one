@@ -1,10 +1,10 @@
-package com.example_spring.ongoing.seventhDay.task7.entity;
+package com.example_spring.complete.seventhDay.task7.entity;
 
 
 
 
 import com.example_spring.common_thing.enums.Behavior;
-import com.example_spring.ongoing.seventhDay.employeeT7.entity.EmployeeT7;
+import com.example_spring.complete.seventhDay.employeeT7.entity.EmployeeT7;
 import lombok.*;
 
 import javax.persistence.*;
