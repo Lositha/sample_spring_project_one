@@ -1,10 +1,14 @@
 package com.example_spring.ongoing.seventhDay.task7.entity;
 
 
+
+
 import com.example_spring.common_thing.enums.Behavior;
+import com.example_spring.ongoing.seventhDay.employeeT7.entity.EmployeeT7;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -24,5 +28,7 @@ public class Task7 {
   @Enumerated(EnumType.STRING)
   private Behavior behavior;
 
+  @ManyToMany(mappedBy = "task7s")
+  private List< EmployeeT7 > employeeT7s;
 
 }

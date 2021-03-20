@@ -23,7 +23,10 @@ public class EmployeeT7 {
 
   private String mobile;
 
-  @OneToMany
+  @ManyToMany
+  @JoinTable( name = "employeet7_task7",
+      joinColumns = @JoinColumn( name = "employeet7_id" ),
+      inverseJoinColumns = @JoinColumn( name = "task7s_id" ) )
   private List< Task7 > task7s;
 
 }
