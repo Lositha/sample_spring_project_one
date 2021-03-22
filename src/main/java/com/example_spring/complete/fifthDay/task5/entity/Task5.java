@@ -26,7 +26,7 @@ public class Task5 {
   @Enumerated(EnumType.STRING)
   private Behavior behavior;
 
-  @OneToMany(mappedBy = "task5")
+ @OneToMany(mappedBy = "task5")
   private List< EmployeeT5 > employeeT5s;
 
 }

@@ -6,4 +6,11 @@ h1{
 button {
     border-radius: 5px;
     padding: 5px;
+    color: aquamarine;
+}
+
+
+button[type="submit"]{
+color: red;
+    background-color: black;
 }

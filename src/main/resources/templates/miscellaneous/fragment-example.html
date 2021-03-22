@@ -11,42 +11,20 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" >
 </head >
 <body >
+<div class="container" >
+  <p >before add sample content </p >
+</div >
+<p> Below show fragment content </p>
+
+<div>
+  <div data-th-replace="~{fragments/sample-content :: sampleContent}" >
+</div>
 
 <div class="container" >
-  <div class="container-fluid text-center" >
-    <div class="row" >
-      <div class="col-4" >
-        <a href="/task6/add" >
-          <button type="button" class="btn btn-info" > New Task</button >
-        </a >
-      </div >
-      <div class="col-4" >
-        <h3 >Employee One List</h3 >
-      </div >
-      <div class="col-4" >
-        <a href="/task6" >
-          <button type="button" class="btn btn-info" > All Task</button >
-        </a >
-      </div >
-    </div >
-  </div >
-  <!--employee add form-->
-  <div class="container-fluid mt-1" >
-      <div class="form-row" >
-        <label data-th-for="${'id'}" >Id :  </label >
-        <p data-th-text="${taskDetail.id}">   </p>
-      </div >
-      <div class="form-row" >
-        <label data-th-for="${'name'}" >Name :  </label >
-        <p data-th-text="${taskDetail.name}"  ></p>
-      </div >
-      <div class="form-row" >
-        <label data-th-for="${'mobile'}" >Behavior :  </label >
-        <p data-th-text="${taskDetail.behavior.behavior}" ></p>
-      </div >
-  </div >
-</div >
 
+  <div data-th-replace="~{fragments/sample-content :: sampleContent}" ></div >
+
+</div >
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

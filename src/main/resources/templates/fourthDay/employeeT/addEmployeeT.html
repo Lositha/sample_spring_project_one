@@ -31,14 +31,17 @@
   <!--employee add form-->
   <div class="container-fluid mt-1" >
     <form action="/employeeT" method="post" data-th-object="${employeeT}">
+      <!--id-->
       <div class="form-group" >
         <label data-th-for="${'id'}" >Id</label >
         <input type="text" data-th-field="*{id}"  class="form-control" placeholder="Enter Id" readonly >
       </div >
+      <!--name-->
       <div class="form-group" >
         <label data-th-for="${'name'}" >Name</label >
         <input type="text" data-th-field="*{name}"  class="form-control" placeholder="Enter Name" required >
       </div >
+      <!--mobile-->
       <div class="form-group" >
         <label data-th-for="${'mobile'}" >Mobile</label >
         <input type="text" data-th-field="*{mobile}"  class="form-control" minlength="9" maxlength="10" placeholder="Enter Mobile" required >

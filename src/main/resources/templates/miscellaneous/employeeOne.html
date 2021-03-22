@@ -16,12 +16,12 @@
   <div class="container-fluid text-center" >
     <div class="row" >
       <div class="col-4" >
-        <a href="/task5/add" >
-          <button type="button" class="btn btn-info" > New Task</button >
+        <a href="/miscellaneous/add" >
+          <button type="button" class="btn btn-info" > New EmployeeOne</button >
         </a >
       </div >
       <div class="col-4" >
-        <h3 >Task List</h3 >
+        <h3 >Employee One List</h3 >
       </div >
       <div class="col-4" >
 
@@ -35,25 +35,27 @@
         <thead class="thead-inverse" >
         <tr >
           <th >Index</th >
+          <!--<th >Id</th >-->
           <th >Name</th >
-          <th >Behavior</th >
+          <th >Mobile</th >
           <th >Modify</th >
         </tr >
         </thead >
         <tbody >
-        <tr data-th-each="task5, a : ${tasks}" >
+        <tr data-th-each="employeeT7, a : ${employeeOnes}" >
           <td data-th-text="${a.count}" ></td >
-          <td data-th-text="${task5.name == null ? 'Ha ha': task5.name}" ></td >
-          <td data-th-text="${task5.behavior.behavior}" ></td >
+          <!--<td data-th-text="${employeeT7.id}" ></td >-->
+          <td data-th-text="${employeeT7.name == null ? 'Ha ha': employeeT7.name}" ></td >
+          <td data-th-text="${employeeT7.mobile}" ></td >
           <td >
-            <a data-th-href="${'/task5/edit/'+task5.id}" >
-            <button class="btn btn-primary" type="button">Edit</button>
-          </a >
-            <a data-th-href="${'/task5/view/'+task5.id}" >
-              <button class="btn btn-warning" type="button">View</button>
+            <a data-th-href="${'/employeeOne/edit/'+employeeT7.id}" >
+              <button class="btn btn-primary" type="button" >Edit</button >
             </a >
-            <a data-th-href="${'/task5/delete/'+task5.id}" >
-              <button class="btn btn-danger" type="button">Delete</button>
+            <a data-th-href="${'/employeeOne/view/'+employeeT7.id}" >
+              <button class="btn btn-warning" type="button" >View</button >
+            </a >
+            <a data-th-href="${'/employeeOne/delete/'+employeeT7.id}" >
+              <button class="btn btn-danger" type="button" >Delete</button >
             </a >
           </td >
         </tr >
@@ -61,6 +63,13 @@
       </table >
     </div >
   </div >
+</div >
+
+<!--  save item detail-->
+<div class="container" data-th-if="${employeeDetail != null}" >
+  <div data-th-replace="~{miscellaneous/employeeOne-detail :: employeeOneDetailFragment}" >
+  </div >
+
 </div >
 
 

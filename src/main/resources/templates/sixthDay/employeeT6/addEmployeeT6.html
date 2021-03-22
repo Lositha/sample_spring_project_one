@@ -22,7 +22,7 @@
         <h3 >Employee T List</h3 >
       </div >
       <div class="col-4" >
-        <a href="/employeeT7" >
+        <a href="/employeeT6" >
           <button type="button" class="btn btn-info" > All Employee T</button >
         </a >
       </div >
@@ -30,7 +30,7 @@
   </div >
   <!--employee add form-->
   <div class="container-fluid mt-1" >
-    <form action="/employeeT7" method="post" data-th-object="${employeeT7}">
+    <form action="/employeeT6" method="post" data-th-object="${employeeT6}">
       <!--id-->
       <div class="form-group" >
         <label data-th-for="${'id'}" >Id</label >
@@ -46,14 +46,14 @@
         <label data-th-for="${'mobile'}" >Mobile</label >
         <input type="text" data-th-field="*{mobile}"  class="form-control" minlength="9" maxlength="10" placeholder="Enter Mobile" required >
       </div >
-      <!--task7-->
+      <!--task6-->
       <div class="form-group" >
         <label data-th-for="${'task6s'}" >Task </label >
         <select data-th-field="*{task6s}" multiple class="form-control" required >
           <option value="" disabled> Select One</option >
-          <option data-th-each="task7 : ${task5s}"
-                  data-th-value="${task7.id}"
-                  data-th-text="${task7.name}"
+          <option data-th-each="task6 : ${task5s}"
+                  data-th-value="${task6.id}"
+                  data-th-text="${task6.name}"
           ></option >
         </select >
       </div >

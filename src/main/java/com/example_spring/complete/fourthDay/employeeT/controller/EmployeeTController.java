@@ -18,15 +18,13 @@ public class EmployeeTController {
 
 
   @GetMapping
-  private String findAll(Model model) {
-
+  public String findAll(Model model) {
     model.addAttribute("employeeOnes", employeeTService.findAll());
-
     return "fourthDay/employeeT/employeeT";
   }
 
   @GetMapping( "/add" )
-  private String addForm(Model model) {
+  public String addForm(Model model) {
      model.addAttribute("employeeT",new EmployeeT());
     return "fourthDay/employeeT/addEmployeeT";
   }
@@ -40,7 +38,7 @@ public class EmployeeTController {
 
   @GetMapping( "/edit/{id}" )
   private String edit(@PathVariable("id") Integer id, Model model) {
-     model.addAttribute("employeeOne", employeeTService.findById(id));
+     model.addAttribute("employeeT", employeeTService.findById(id));
     return "fourthDay/employeeT/addEmployeeT";
   }
 

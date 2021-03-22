@@ -46,7 +46,41 @@
       </div >
   </div >
 </div >
-
+<!--employee all show-->
+<div class="container-fluid mt-1" >
+  <div class="container text-center" >
+    <table class="table table-striped table-inverse table-responsive" >
+      <thead class="thead-inverse" >
+      <tr >
+        <th >Index</th >
+        <!--<th >Id</th >-->
+        <th >Name</th >
+        <th >Mobile</th >
+        <th >Modify</th >
+      </tr >
+      </thead >
+      <tbody >
+      <tr data-th-each="employeeT7, a : ${taskDetail.employeeT7s}" >
+        <td data-th-text="${a.count}" ></td >
+        <!--<td data-th-text="${employeeT7.id}" ></td >-->
+        <td data-th-text="${employeeT7.name == null ? 'Ha ha': employeeT7.name}" ></td >
+        <td data-th-text="${employeeT7.mobile}" ></td >
+        <td >
+          <a data-th-href="${'/employeeT7/edit/'+employeeT7.id}" >
+            <button class="btn btn-primary" type="button">Edit</button>
+          </a >
+          <a data-th-href="${'/employeeT7/view/'+employeeT7.id}" >
+            <button class="btn btn-warning" type="button">View</button>
+          </a >
+          <a data-th-href="${'/employeeT7/delete/'+employeeT7.id}" >
+            <button class="btn btn-danger" type="button">Delete</button>
+          </a >
+        </td >
+      </tr >
+      </tbody >
+    </table >
+  </div >
+</div >
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

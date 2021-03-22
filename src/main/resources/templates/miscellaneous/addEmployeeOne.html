@@ -9,8 +9,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" >
-
-  <link rel="stylesheet" data-th-href="@{/css/myCss.css}" >
 </head >
 <body >
 
@@ -21,43 +19,31 @@
 
       </div >
       <div class="col-4" >
-        <h3 >Employee T List</h3 >
+        <h3 >Employee One List</h3 >
       </div >
       <div class="col-4" >
-        <a href="/employeeT7" >
-          <button type="button" class="btn btn-info" > All Employee T</button >
+        <a href="/miscellaneous" >
+          <button type="button" class="btn btn-info" > All Employee One</button >
         </a >
       </div >
     </div >
   </div >
+
+
   <!--employee add form-->
   <div class="container-fluid mt-1" >
-    <form action="/employeeT7" method="post" data-th-object="${employeeT7}">
-      <!--id-->
+    <form action="/miscellaneous" method="post" data-th-object="${employeeOne}">
       <div class="form-group" >
         <label data-th-for="${'id'}" >Id</label >
         <input type="text" data-th-field="*{id}"  class="form-control" placeholder="Enter Id" readonly >
       </div >
-      <!--name-->
       <div class="form-group" >
         <label data-th-for="${'name'}" >Name</label >
         <input type="text" data-th-field="*{name}"  class="form-control" placeholder="Enter Name" required >
       </div >
-      <!--mobile-->
       <div class="form-group" >
         <label data-th-for="${'mobile'}" >Mobile</label >
         <input type="text" data-th-field="*{mobile}"  class="form-control" minlength="9" maxlength="10" placeholder="Enter Mobile" required >
-      </div >
-      <!--task7-->
-      <div class="form-group" >
-        <label data-th-for="${'task7s'}" >Task </label >
-        <select data-th-field="*{task7s}" multiple class="form-control" required >
-          <option value="" disabled> Select One</option >
-          <option data-th-each="task7 : ${task5s}"
-                  data-th-value="${task7.id}"
-                  data-th-text="${task7.name}"
-          ></option >
-        </select >
       </div >
       <button type="submit" class="btn btn-primary" >Submit</button >
     </form >
